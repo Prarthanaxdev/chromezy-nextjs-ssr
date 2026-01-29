@@ -1,0 +1,99 @@
+@import 'tailwindcss';
+
+/* :root {
+  --color-base-dark: #0b0d14;
+  --color-accent-blue: #4dc3e8;
+  --color-accent-purple: #7f5cff;
+  --color-accent-pink: #ff5cf4;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a0aec0;
+  --gradient-hero: linear-gradient(90deg, #3c6bfe 0%, #9d84f2 100%);
+}
+
+/* Utility class for hero gradient background */
+/* .gradient-hero {
+  background-image: var(--gradient-hero);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+.hero-gradient {
+  background: linear-gradient(90deg, #3c6bfe 0%, #9d84f2 100%);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Custom font classes for navbar */
+.navbar-font {
+  font-family: 'Inter', sans-serif, 'Inter Fallback';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0px;
+}
+
+@media (max-width: 1140px) {
+  .max-\[1140px\]\:gap-6 {
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 870px) {
+  .max-\[870px\]\:gap-4 {
+    gap: 1rem;
+  }
+}
+
+.search-gt-900 {
+  display: flex;
+}
+@media (max-width: 900px) {
+  .search-gt-900 {
+    display: none !important;
+  }
+}
+
+/* Advanced hero background with blurred blobs and grain overlay */
+.hero {
+  position: relative;
+  background:
+    url('/images/hero-bg.png') center center / cover no-repeat,
+    #0b1020;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.hero::before,
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: -30%;
+  filter: blur(120px);
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.hero::before {
+  background:
+    radial-gradient(circle at 50% 45%, rgba(255, 120, 150, 0.6), transparent 60%),
+    radial-gradient(circle at 15% 10%, rgba(120, 90, 255, 0.6), transparent 55%);
+}
+
+.hero::after {
+  background: radial-gradient(circle at 85% 15%, rgba(60, 120, 255, 0.5), transparent 55%);
+  mix-blend-mode: screen;
+}
+
+/* Optional: grain overlay (add a div with className="hero-grain" inside .hero) */
+.hero-grain {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/noise.png');
+  opacity: 0.06;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: 1;
+}
