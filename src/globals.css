@@ -56,7 +56,8 @@
 }
 
 /* Advanced hero background with blurred blobs and grain overlay */
-.hero {
+
+/* .hero {
   position: relative;
   background:
     url('/images/hero-bg.png') center center / cover no-repeat,
@@ -84,7 +85,7 @@
 .hero::after {
   background: radial-gradient(circle at 85% 15%, rgba(60, 120, 255, 0.5), transparent 55%);
   mix-blend-mode: screen;
-}
+} */
 
 /* Optional: grain overlay (add a div with className="hero-grain" inside .hero) */
 .hero-grain {
