@@ -3,7 +3,7 @@ import { FaSearch } from 'react-icons/fa';
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import MobileDrawer from './MobileDrawer';
+import MobileDrawer from './mobileDrawer';
 
 const navLinks = [
   { name: 'Home', href: '/' },
