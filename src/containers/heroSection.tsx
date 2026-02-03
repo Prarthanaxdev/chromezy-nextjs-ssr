@@ -12,34 +12,48 @@ function HeroSection() {
             <Image src="/images/glow.png" width={16} height={16} alt="magic" priority />
             <p className="font-inter font-medium text-[#ECF4BD]">Introducing AI Automation</p>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-2">
+          <h1 className="font-bold text-white leading-tight mb-2" style={{ fontSize: '64px' }}>
             from <span className="text-[#11DEFF]">CONCEPT</span>
             <br />
             to <span className="text-[#4380FF]">REALITY</span>
           </h1>
-          <h2 className="text-lg md:text-2xl font-medium text-[#BDF4D0] mb-6">
+          <h2
+            className="text-lg md:text-2xl font-medium text-[#BDF4D0] mt-6 mb-6"
+            style={{ marginTop: '24px' }}
+          >
             We Engineer your Software Success & Digital Transformation.
           </h2>
-          <p className="text-textSecondary max-w-2xl mx-auto mb-10">
+          <p
+            className="max-w-[698px] text-center text-[clamp(14px,1.7vw,16px)]"
+            style={{ marginTop: '24px' }}
+          >
             At Chromezy, we translate your ideas into market-ready solutions quickly and precisely.
             Leveraging the power of technology and prioritizing user needs, we deliver products that
             are both cutting-edge and user-centric.
           </p>
-          <div className="flex flex-wrap justify-center gap-8 mb-10">
+          <div className="grid min-h-[153px] w-full max-w-[817px] grid-cols-[repeat(auto-fill,_minmax(120px,1fr))] items-center justify-center gap-[49px] px-[56px] py-10 max-md:grid-cols-[repeat(auto-fill,_minmax(100px,1fr))] max-md:px-2">
             <div className="flex flex-col items-center">
-              <span className="text-[#7F5CFF] text-2xl md:text-3xl font-bold">200%</span>
+              <span className="bg-gradient-to-r from-[#3C6BFE] to-[#9D84F2] bg-clip-text text-transparent text-2xl md:text-3xl font-bold">
+                200%
+              </span>
               <span className="text-textSecondary text-xs mt-1">Revenue Growth</span>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-[#4DC3E8] text-2xl md:text-3xl font-bold">4X</span>
+              <span className="bg-gradient-to-r from-[#3C6BFE] to-[#9D84F2] bg-clip-text text-transparent text-2xl md:text-3xl font-bold">
+                4X
+              </span>
               <span className="text-textSecondary text-xs mt-1">Speed to Market</span>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-[#FF5CF4] text-2xl md:text-3xl font-bold">73%</span>
+              <span className="bg-gradient-to-r from-[#3C6BFE] to-[#9D84F2] bg-clip-text text-transparent text-2xl md:text-3xl font-bold">
+                73%
+              </span>
               <span className="text-textSecondary text-xs mt-1">New Orders</span>
             </div>
             <div className="flex flex-col items-center">
-              <span className="text-[#4DC3E8] text-2xl md:text-3xl font-bold">10K+</span>
+              <span className="bg-gradient-to-r from-[#3C6BFE] to-[#9D84F2] bg-clip-text text-transparent text-2xl md:text-3xl font-bold">
+                10K+
+              </span>
               <span className="text-textSecondary text-xs mt-1">Active Users</span>
             </div>
           </div>
