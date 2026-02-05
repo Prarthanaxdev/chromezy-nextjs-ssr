@@ -4,16 +4,22 @@ import { FiArrowUpRight } from 'react-icons/fi';
 
 export default function Blogs() {
   return (
-    // <HiddenTopAnimation distance={[2655, 3350]} maxScreen={1300}>
     <>
-      <section className="relative space-y-12 p-20 pb-0 max-md:px-6 max-md:py-10" id="Products">
-        <h2 className="text-4xl font-bold text-white mb-4">Success Stories</h2>
-        <p className="w-[60%] text-[clamp(14px,3vw,16px)] text-[#ffffffcc] max-md:w-[85%]">
-          Dummy ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
-          interdum, ac aliquet odio mattis.
-        </p>
-      </section>
-      <div className="relative space-y-6 p-20 max-md:px-6 max-md:py-10">
+      <div
+        className="grid scroll-mt-3 grid-cols-[repeat(auto-fill_,minmax(320px,1fr))] gap-10 p-20 max-md:px-6 max-sm:grid-cols-[repeat(auto-fill_,minmax(300px,1fr))] max-sm:gap-6 max-sm:py-14"
+        id="blogs"
+      >
+        <section
+          className="max-h-[304px] space-y-4 py-10 max-sm:mb-4 max-sm:p-0"
+          id="successStories"
+        >
+          <h2 className="text-4xl font-bold text-white mb-4">Success Stories</h2>
+          <p className="w-[60%] text-[clamp(14px,3vw,16px)] text-[#ffffffcc] max-md:w-[85%]">
+            Dummy ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+            interdum, ac aliquet odio mattis.
+          </p>
+        </section>
+        {/* <div className="relative space-y-6 p-20 max-md:px-6 max-md:py-10"> */}
         {BlogsData?.map((data, idx) => (
           <GoTopAnimation key={idx} idx={idx} startNumber={2}>
             <div className="relative h-[304px] overflow-hidden rounded-[20px]">
@@ -33,7 +39,5 @@ export default function Blogs() {
         ))}
       </div>
     </>
-
-    // </HiddenTopAnimation>
   );
 }
