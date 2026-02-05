@@ -137,3 +137,159 @@ export const BlogsData = [
     ),
   },
 ];
+
+export const ServicesData = [
+  {
+    title: 'Web App Development',
+    Services: [
+      {
+        text: 'React',
+        image: 'images/React.png',
+      },
+      {
+        text: 'Node',
+        image: 'images/Js.png',
+      },
+      {
+        text: 'Angular',
+        image: 'images/Angular.png',
+      },
+      {
+        text: 'Vue',
+        image: 'images/Vue.png',
+      },
+      {
+        text: 'ExpressJs',
+        image: 'images/Express.png',
+      },
+      {
+        text: 'AdobeXD',
+        image: 'images/Xd.png',
+      },
+      {
+        text: 'Figma',
+        image: 'images/Figma.png',
+      },
+      {
+        text: 'Whimsical',
+      },
+    ],
+  },
+  {
+    title: 'Mobile App Development',
+    Services: [
+      {
+        text: 'Flutter',
+        image: 'images/Flutter.png',
+      },
+      {
+        text: 'Kotlin',
+        image: 'images/Kotlin.png',
+      },
+      {
+        text: 'swift',
+        image: 'images/Swifth.png',
+      },
+      {
+        text: 'React Native',
+        image: 'images/React.png',
+      },
+      {
+        text: 'AdobeXD',
+        image: 'images/Xd.png',
+      },
+      {
+        text: 'Figma',
+        image: 'images/Figma.png',
+      },
+    ],
+  },
+  {
+    title: 'E-commerce',
+    Services: [
+      {
+        text: 'Shopify',
+      },
+      {
+        text: 'WooCommerce',
+      },
+      {
+        text: 'Prestashop',
+      },
+    ],
+  },
+  {
+    title: 'Analytics',
+    Services: [
+      {
+        text: 'Python',
+        image: 'images/Python.png',
+      },
+      {
+        text: 'PowerBI',
+        image: 'images/PowerBI.png',
+      },
+      {
+        text: 'Tableau',
+        image: 'images/Tableau.png',
+      },
+      {
+        text: 'Amazon QuickSight',
+      },
+      {
+        text: 'Apache Spark',
+        image: 'images/Tableau.png',
+      },
+    ],
+  },
+  {
+    title: 'Data & Cloud',
+    Services: [
+      {
+        text: 'Azure',
+        image: 'images/Azure.png',
+      },
+      {
+        text: 'AWS',
+        image: 'images/AWS.png',
+      },
+      {
+        text: 'Docker',
+        image: 'images/Docker.png',
+      },
+      {
+        text: 'Kubernetes',
+        image: 'images/Kubernetes.png',
+      },
+      {
+        text: 'Google Cloud',
+        image: 'images/Google Cloud.png',
+      },
+      {
+        text: 'Ola Krutrim',
+      },
+    ],
+  },
+];
+
+export const ExploreAIData = [
+  {
+    title: 'Successful MVP Launches That Changed the Game.',
+    description: `Discover the secrets behind game-changing MVP launches! From lean
+          startups to industry giants, explore how these innovative launches
+          disrupted markets and paved the way for success. Click to uncover the
+          strategies that revolutionized product development.`,
+    image: 'images/insights1.png',
+  },
+  {
+    title: 'How Our AI Product Development Company is Pioneering Innovation?',
+    description: `Discover how our product development company pioneers innovation. From groundbreaking Services to creative strategies, we're shaping the future. Click to explore our journey and join us in revolutionizing industries.`,
+    image: 'images/insights2.png',
+  },
+
+  {
+    title: 'Optimizing E-commerce Sales with AI-Driven Product Recommendations.',
+    description: `Boost your e-commerce sales with AI-powered product recommendations. Learn how smart algorithms can enhance customer experience and drive conversions. Read our blog for actionable insights!`,
+    image: 'images/insights3.png',
+  },
+];
