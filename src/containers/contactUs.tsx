@@ -80,7 +80,6 @@ export default function ContactUs() {
             className="relative right-[50px] min-h-[638px] w-[35.35%] space-y-5 rounded-[20px] bg-[#DBEBFF] px-10 py-[50px] max-[850px]:w-[40%] max-md:right-0 max-md:m-10 max-md:w-[86%] max-md:p-6 max-sm:mx-0"
             style={{ overflow }}
           >
-            {/* Small mail icon in top right */}
             <motion.div
               className="absolute right-[-16px] top-[-90px] h-[130px] w-[167px]"
               style={{
@@ -96,65 +95,64 @@ export default function ContactUs() {
             <p className="text-2xl font-semibold leading-5 text-[#141517]">Let&apos;s talk!</p>
             <form>
               <div className="space-y-1">
-                <label htmlFor="userName" className="block text-sm font-medium">
+                <label htmlFor="userName" className="block text-sm font-medium text-[#141517]">
                   What’s your name?
                 </label>
                 <input
                   id="userName"
                   name="userName"
                   type="text"
-                  className="w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm focus:border-blue-400 focus:outline-none"
+                  className="w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm text-[#141517] focus:border-blue-400 focus:outline-none"
                 />
               </div>
               <div className="space-y-1">
-                <label htmlFor="email" className="block text-sm font-medium">
+                <label htmlFor="email" className="block text-sm font-medium text-[#141517]">
                   What’s your email address?
                 </label>
                 <input
                   id="email"
                   name="email"
                   type="email"
-                  className="w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm focus:border-blue-400 focus:outline-none"
+                  className="w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm text-[#141517] focus:border-blue-400 focus:outline-none"
                 />
               </div>
               <div className="space-y-1">
-                <label htmlFor="phoneNumber" className="block text-sm font-medium">
+                <label htmlFor="phoneNumber" className="block text-sm font-medium text-[#141517]">
                   What’s your phone number?
                 </label>
                 <input
                   id="phoneNumber"
                   name="phoneNumber"
                   type="tel"
-                  className="w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm focus:border-blue-400 focus:outline-none"
+                  className="w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm text-[#141517] focus:border-blue-400 focus:outline-none"
                 />
               </div>
               <div className="space-y-1">
-                <label htmlFor="comment" className="block text-sm font-medium">
+                <label htmlFor="comment" className="block text-sm font-medium text-[#141517]">
                   What are you looking for?
                 </label>
                 <input
                   id="comment"
                   name="comment"
                   type="text"
-                  className="w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm focus:border-blue-400 focus:outline-none"
+                  className="w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm text-[#141517] focus:border-blue-400 focus:outline-none"
                 />
               </div>
               <div className="space-y-1">
-                <label htmlFor="helpComment" className="block text-sm font-medium">
+                <label htmlFor="helpComment" className="block text-sm font-medium text-[#141517]">
                   How can we help you?
                 </label>
                 <textarea
                   id="helpComment"
                   name="helpComment"
                   rows={3}
-                  className="w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm focus:border-blue-400 focus:outline-none"
+                  className="w-full rounded-md border border-gray-300 bg-white px-3 py-2 text-sm text-[#141517] focus:border-blue-400 focus:outline-none"
                 />
               </div>
-              <button className="relative top-1 flex h-[56px] w-full items-center justify-center rounded-[80px] bg-black text-xs text-white">
+              <button className="relative top-1 mt-3 flex h-[56px] w-full items-center justify-center rounded-[80px] bg-black text-xs text-white">
                 Send request
               </button>
             </form>
-            {/* Removed large mail image from outside the card */}
           </motion.div>
         </div>
       </div>
