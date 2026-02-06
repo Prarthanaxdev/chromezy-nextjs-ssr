@@ -14,6 +14,14 @@ export default function ProductsCardsRows() {
               className={`relative h-[436px] gap-4 rounded-xl px-5 py-8`}
               style={{ background: card.color }}
             >
+              <Image
+                src={card.image}
+                width={149.28}
+                height={177}
+                alt="Image Card"
+                className="absolute right-5 top-8"
+              />
+              {/* {card.image} */}
               <p className="flex h-8 w-[97px] items-center justify-center rounded-[50px] border border-[#ffffff1a] bg-[#ffffff0d] text-[10px]">
                 Our Services
               </p>

@@ -10,10 +10,7 @@ export default function Services() {
       className="flex scroll-mt-10 flex-wrap items-center gap-20 px-20 py-[60px] max-[1050px]:gap-10 max-lg:gap-20 max-md:px-6 max-sm:py-14 "
       id="services"
     >
-      <motion.div
-        className="SideSolgan min-h-653px w-[40%] overflow-hidden rounded-[80px] bg-gradient-to-b from-[#282e6c33] to-[#bdd5f433] px-10 backdrop-blur-[30px] max-lg:h-[500px] max-lg:w-full max-lg:p-10 max-md:rounded-[30px]"
-        // style={animation}
-      >
+      <motion.div className="SideSolgan min-h-653px w-[40%] overflow-hidden rounded-[80px] bg-gradient-to-b from-[#282e6c33] to-[#bdd5f433] px-10 backdrop-blur-[30px] max-lg:h-[500px] max-lg:w-full max-lg:p-10 max-md:rounded-[30px]">
         <p className="w-[85%] text-[clamp(24px,3vw,40px)] font-semibold max-sm:w-full mt-[44px]">
           INNOVATIVE TECHNOLOGIES KEEPING US AHEAD
         </p>
@@ -30,10 +27,7 @@ export default function Services() {
           />
         </div>
       </motion.div>
-      <motion.div
-        className="flex w-[51%] flex-col gap-10 max-lg:w-full"
-        // style={animation}
-      >
+      <motion.div className="flex w-[51%] flex-col gap-10 max-lg:w-full">
         {ServicesData.map((data, idx) => (
           <GoTopAnimation key={data.title} idx={idx} startNumber={0}>
             <div className="relative flex items-start gap-10">
