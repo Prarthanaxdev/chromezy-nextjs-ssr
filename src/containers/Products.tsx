@@ -1,4 +1,4 @@
-import ProductsCardsRows from './productsCardsRows';
+import ProductsCardsRows from './ProductsCardsRows';
 
 function Products() {
   return (
