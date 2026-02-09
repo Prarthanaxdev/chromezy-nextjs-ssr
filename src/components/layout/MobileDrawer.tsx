@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 
 interface NavLink {
   name: string;
@@ -11,6 +11,17 @@ interface MobileDrawerProps {
 }
 
 export default function MobileDrawer({ open, onClose, navLinks }: MobileDrawerProps) {
+  const [hash, setHash] = useState('');
+
+  function handleclickNav(nav: string) {
+    const element = document.getElementById(nav);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setHash(nav);
+    onClose();
+  }
+
   if (!open) return null;
   return (
     <div className="fixed inset-0 z-50 bg-[#0B0D14] bg-opacity-95 flex flex-col p-6 transition-all duration-300">
@@ -50,7 +61,14 @@ export default function MobileDrawer({ open, onClose, navLinks }: MobileDrawerPr
             key={link.name}
             className="list-none border-b border-gray-700 py-3 flex items-center justify-between"
           >
-            <a href={link.href} className="text-white text-lg hover:text-blue-400 transition">
+            <a
+              href={link.href}
+              className="text-white text-lg hover:text-blue-400 transition"
+              onClick={(e) => {
+                e.preventDefault();
+                handleclickNav(link.href);
+              }}
+            >
               {link.name}
             </a>
             <span className="text-white text-xl">&#8250;</span>
