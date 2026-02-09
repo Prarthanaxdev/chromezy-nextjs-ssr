@@ -2,7 +2,7 @@
 import { FaSearch } from 'react-icons/fa';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
-import MobileDrawer from './mobileDrawer';
+import MobileDrawer from './MobileDrawer';
 
 const navLinks = [
   { name: 'Home', href: '' },
@@ -119,7 +119,7 @@ export default function NavBar() {
         <a
           href="#footer"
           className="navbar-font text-white hover:text-blue-400 transition whitespace-nowrap flex items-center pb-1 md:pb-0 text-base md:text-lg"
-          onClick={e => {
+          onClick={(e) => {
             e.preventDefault();
             const section = document.getElementById('footer');
             if (section) {
@@ -132,8 +132,14 @@ export default function NavBar() {
         <a
           href="#contact"
           className="bg-[#4F8CFF] text-white font-semibold rounded-full flex items-center justify-center gap-2 transition-all duration-200 hover:bg-blue-600 whitespace-nowrap text-base md:text-lg"
-          style={{ minWidth: 115, height: 40, padding: '10px 20px', fontSize: '14px', cursor: 'pointer' }}
-          onClick={e => {
+          style={{
+            minWidth: 115,
+            height: 40,
+            padding: '10px 20px',
+            fontSize: '14px',
+            cursor: 'pointer',
+          }}
+          onClick={(e) => {
             e.preventDefault();
             const section = document.getElementById('contact');
             if (section) {
