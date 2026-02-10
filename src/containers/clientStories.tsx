@@ -53,6 +53,7 @@ function ClientStories() {
             >
               {ClientsData?.map((client, idx) => (
                 <div
+                  key={idx}
                   ref={commentRef}
                   className="h-[450px] w-[clamp(310px,47.15vw,400px)] rounded-[20px] bg-[#bdd5f40d] p-6 backdrop-blur-[40px] transition-all duration-200 hover:bg-[#bdd5f433]"
                 >
